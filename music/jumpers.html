@@ -1,0 +1,32 @@
+<head>
+    <title>Elliott Etzkorn - Music - Jumpers</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' href='../styles.css'>
+    <script src='player.js'></script>
+    <link rel='icon' href='jumpers/art.ico' type='image/x-icon'>
+</head>
+
+<body>
+    <a href='../index.html'>home</a><small> / </small><a href='../music.html'>music</a>
+    <div class='container'>
+        <div class='audio-section'>
+            <h2>Jumpers</h2>
+            <p>i want to mirror your image to its fullest perfection<br />♦<br />never be blind or too old to uphold
+                your
+                weighty
+                wavering reflection</p>
+            <audio class='audio-player' id='audioPlayer' controls></audio>
+            <ol id='trackList'>
+                <li class='track' data-track='0'>Jumpers</li>
+                <li class='track' data-track='1'>Reflection</li>
+            </ol>
+            <div style="text-align: right;"><a download href='jumpers/jumpers.torrent'>download</a></div>
+            <script>
+                setupAudioPlayer('audioPlayer', 'trackList', ['jumpers/1.mp3', 'jumpers/2.mp3'], 'Jumpers', 'jumpers/art.jpg');
+            </script>
+        </div>
+        <div class='album-art-section'>
+            <img class='album-art' src='jumpers/art.jpg' alt='Album art for Jumpers'>
+        </div>
+    </div>
+</body>

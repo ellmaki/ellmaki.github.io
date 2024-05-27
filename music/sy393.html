@@ -1,0 +1,30 @@
+<head>
+    <title>Elliott Etzkorn - Music - SY393</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' href='../styles.css'>
+    <script src='player.js'></script>
+    <link rel='icon' href='sy393/art.ico' type='image/x-icon'>
+</head>
+
+<body>
+    <a href='../index.html'>home</a><small> / </small><a href='../music.html'>music</a>
+    <div class='container'>
+        <div class='audio-section'>
+            <h2>SY393</h2>
+            <p>Recorded using one sample, one virtual synthesizer, and a tr909 vst in the sky, flying from Minnesota to
+                California.</p>
+            <audio class='audio-player' id='audioPlayer' controls></audio>
+            <ol id='trackList'>
+                <li class='track' data-track='0'>SY393</li>
+            </ol>
+            <div style="text-align: right;"><a download href='sy393/sy393.torrent'>download</a></div>
+            <script>
+                setupAudioPlayer('audioPlayer', 'trackList', ['sy393/1.mp3'], 'SY393', 'sy393/art.jpg');
+            </script>
+        </div>
+        <div class='album-art-section'>
+            <img class='album-art' src='sy393/art.jpg' alt='Album art for sy393'>
+        </div>
+    </div>
+
+</body>

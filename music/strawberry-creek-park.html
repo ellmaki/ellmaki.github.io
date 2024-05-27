@@ -1,0 +1,31 @@
+<head>
+    <title>Elliott Etzkorn - Music - Strawberry Creek Park</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' href='../styles.css'>
+    <script src='player.js'></script>
+    <link rel='icon' href='strawberry-creek-park/art.ico' type='image/x-icon'>
+</head>
+
+<body>
+    <a href='../index.html'>home</a><small> / </small><a href='../music.html'>music</a>
+    <div class='container'>
+        <div class='audio-section'>
+            <h2>Strawberry Creek Park</h2>
+            <p>There is a <a href='https://maps.app.goo.gl/WPZBKmviQ1uqPmJr6'>beautiful
+                    park</a> in Berkeley, California, where I would daydream and write..</p>
+            <audio class='audio-player' id='audioPlayer' controls></audio>
+            <ol id='trackList'>
+                <li class='track' data-track='0'>Strawberry Creek Park</li>
+            </ol>
+            <div style="text-align: right;"><a download
+                    href='strawberry-creek-park/strawberry-creek-park.torrent'>download</a></div>
+            <script>
+                setupAudioPlayer('audioPlayer', 'trackList', ['strawberry-creek-park/1.mp3'], 'Strawberry Creek Park', 'strawberry-creek-park/art.jpg');
+            </script>
+        </div>
+        <div class='album-art-section'>
+            <img class='album-art' src='strawberry-creek-park/art.jpg' alt='Album art for strawberry-creek-park'>
+        </div>
+    </div>
+
+</body>
