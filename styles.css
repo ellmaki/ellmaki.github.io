@@ -26,7 +26,7 @@ body {
 }
 
 small {
-    color: #888888;
+    color: gray;
 }
 
 img {
@@ -44,7 +44,7 @@ ul {
 }
 
 a {
-    color: #FF00FF;
+    color: magenta;
     text-decoration: none;
 }
 
@@ -53,11 +53,11 @@ a:hover {
 }
 
 a:visited {
-    color: #FF00FF;
+    color: magenta;
 }
 
 a:active {
-    color: #FF0000;
+    color: red;
 }
 
 .audio-player {
@@ -75,16 +75,16 @@ a:active {
 }
 
 .track {
-    color: #888888;
+    color: gray;
 }
 
 .track:hover {
-    color: #000000;
+    color: black;
     cursor: pointer;
 }
 
 .currently-playing {
-    color: #000000;
+    color: black;
     text-decoration: underline;
 }
 
