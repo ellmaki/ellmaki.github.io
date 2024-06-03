@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elliott Etzkorn - Visual Art - Wallpaper</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' href='../styles.css'>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel='icon' href='../visual-art.ico' type='image/x-icon'>
+
+    <style>
+        html {
+            background-color: white;
+        }
+
+        body {
+            background-color: white;
+            border: 1px solid magenta;
+        }
+
+        @media (max-width: 816px) {
+            body {
+
+                border: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <a href='..'>home</a><small> / </small><a href='../visual-art.html'>visual-art</a>
+        <h2>Wallpaper</h2>
+        <p>
+            This is a set of instructions for decorating your digital home with wallpaper.
+        </p>
+        <ol>
+            <li>
+                Consider your digital home. How does it feel?
+            </li>
+            <li>
+                Are there rooms in your digital home?
+            </li>
+            <li>
+                Which rooms do you think need wallpaper?
+            </li>
+            <li>
+                Write down the rooms which need wallpaper, and think about how you would decorate them as real spaces.
+            </li>
+            <li>
+                What sort of mood do you want to evoke in each room?
+            </li>
+            <li>
+                Look at the full range of emojis and consider which ones match that mood. If you are on a mac, you
+                can see emojis by tapping the 🌐 button on your keyboard. You can also use <a
+                    href="https://emojipedia.org/">emojipedia</a>.
+            </li>
+            <li>
+                Here are some aspects of emojis to consider as contributors to mood: color, shape, weight, taste, smell,
+                texture.
+            </li>
+            <li>
+                Input the emojis you have chosen here:
+                <input type="text" id="emojis" placeholder="🪁🪻🍇">
+            </li>
+            <li id="li9" style="display: none;">
+                <a href="#" id="copyLink">Copy</a> this code:<div id="docs"></div>
+            </li>
+
+        </ol>
+    </div>
+
+    <script>
+        document.getElementById('copyLink').onclick = function () {
+            const code = document.getElementById('docs').textContent;
+            navigator.clipboard.writeText(code);
+            alert('The wallpaper was copied to your clipboard. Past it inside of a <script> tag at the bottom of the html file for your room. ');
+            return false; // Prevent the default action
+        };
+
+        function generateEmojis(emojisString) {
+            const emojis = Array.from(emojisString);
+            const emojisLength = emojis.length;
+            const fragment = document.createDocumentFragment();
+
+            for (let i = 0; i < Math.floor((window.innerWidth * window.innerHeight) / 3333); i++) {
+                const emoji = document.createElement('div');
+                emoji.style.position = 'fixed';
+                emoji.style.zIndex = -1;
+                emoji.classList.add('emoji');
+                emoji.textContent = emojis[Math.floor(Math.random() * emojisLength)];
+                emoji.style.fontSize = Math.max(Math.random() * 5, 2) + 'em';
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.top = Math.random() * 100 + 'vh';
+                emoji.style.opacity = Math.pow(Math.random(), 2.2) * (0.88 - 0.05) + 0.05;
+                fragment.appendChild(emoji);
+            }
+
+            document.body.appendChild(fragment);
+        }
+
+        function clearEmojis() {
+            const existingEmojis = document.querySelectorAll('.emoji');
+            existingEmojis.forEach(emoji => emoji.remove());
+        }
+
+        function clearDocs() {
+            const existingDocs = document.querySelector('pre');
+            if (existingDocs) existingDocs.remove();
+        }
+
+        function generateDocs(emojisString) {
+            const code = document.createElement('pre');
+            code.textContent = `const emojis = Array.from('${emojisString}');
+const emojisLength = emojis.length;
+const fragment = document.createDocumentFragment();
+const count = Math.floor((window.innerWidth * window.innerHeight) / 3333);
+
+for (let i = 0; i < count; i++) {
+    const emoji = document.createElement('div');
+    emoji.style.position = 'fixed';
+    emoji.style.zIndex = -1;
+    emoji.classList.add('emoji');
+    emoji.textContent = emojis[Math.floor(Math.random() * emojisLength)];
+    emoji.style.fontSize = Math.max(Math.random() * 5, 2) + 'em';
+    emoji.style.left = Math.random() * 100 + 'vw';
+    emoji.style.top = Math.random() * 100 + 'vh';
+    emoji.style.opacity = Math.pow(Math.random(), 2.2) * (0.88 - 0.05) + 0.05;
+    fragment.appendChild(emoji);
+}
+
+document.body.appendChild(fragment);
+`;
+            const small = document.createElement('small');
+            small.appendChild(code);
+
+            document.getElementById('docs').appendChild(small);
+        }
+
+        generateEmojis('🪁🪻🍇');
+        generateDocs('🪁🪻🍇');
+
+        document.getElementById('emojis').addEventListener('input', function () {
+            const sanitizedInput = this.value.replace(/[^(\p{Emoji_Presentation})]+/gu, '');
+            if (sanitizedInput.length > 0) {
+                document.getElementById('li9').style.display = 'list-item';
+
+                clearEmojis();
+                clearDocs();
+                generateEmojis(sanitizedInput);
+                generateDocs(sanitizedInput);
+            }
+
+        });
+    </script>
+</body>
+
+</html>
