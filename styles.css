@@ -25,6 +25,10 @@ body {
     padding: 2rem;
 }
 
+pre {
+    max-width: 100%;
+}
+
 small {
     color: gray;
 }
