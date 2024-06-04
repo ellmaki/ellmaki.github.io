@@ -8,6 +8,14 @@
     font-weight: normal;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.17em;
+}
+
 html {
     overflow-y: scroll;
     background-color: #BAECF4;
