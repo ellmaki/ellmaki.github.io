@@ -1,13 +1,12 @@
 body {
     background-color: white;
+    width: 100%;
 }
 
-.audio-player,
-body {
-    width: 100%
+a {
+    text-decoration: none
 }
 
-.currently-playing,
 a:hover {
     text-decoration: underline
 }
@@ -15,10 +14,6 @@ a:hover {
 a,
 a:visited {
     color: blue
-}
-
-a {
-    text-decoration: none
 }
 
 @font-face {

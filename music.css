@@ -7,6 +7,10 @@ body {
     border: 1px solid forestgreen
 }
 
+.audio-player {
+    width: 100%
+}
+
 .album-art {
     max-width: 100%;
 }
@@ -22,5 +26,6 @@ small {
 }
 
 .currently-playing {
-    color: black
+    color: black;
+    text-decoration: underline
 }
