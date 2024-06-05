@@ -51,20 +51,6 @@ body {
     border: 1px solid blue
 }
 
-.album-art,
-pre {
-    max-width: 100%
-}
-
-pre {
-    max-height: 100vh;
-    overflow: auto
-}
-
-.track,
-small {
-    color: gray
-}
 
 img {
     max-width: 40%
@@ -85,14 +71,6 @@ ul {
     grid-gap: 2rem
 }
 
-.track:hover {
-    color: black;
-    cursor: pointer
-}
-
-.currently-playing {
-    color: black
-}
 
 @media (max-width:816px) {
     img {

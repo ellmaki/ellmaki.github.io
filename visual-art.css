@@ -6,3 +6,12 @@ a:visited {
 body {
     border: 1px solid magenta
 }
+
+pre {
+    max-width: 100%
+}
+
+pre {
+    max-height: 100vh;
+    overflow: auto
+}

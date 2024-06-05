@@ -6,3 +6,21 @@ a:visited {
 body {
     border: 1px solid forestgreen
 }
+
+.album-art {
+    max-width: 100%;
+}
+
+.track,
+small {
+    color: gray
+}
+
+.track:hover {
+    color: black;
+    cursor: pointer
+}
+
+.currently-playing {
+    color: black
+}
