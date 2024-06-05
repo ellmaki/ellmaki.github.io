@@ -1,1 +1,8 @@
-a,a:visited{color:magenta}a:active{color:red}body{border:1px solid magenta}
+a,
+a:visited {
+    color: magenta
+}
+
+body {
+    border: 1px solid magenta
+}

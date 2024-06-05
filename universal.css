@@ -1,0 +1,9 @@
+@media (max-width:816px) {
+    body {
+        border: none
+    }
+}
+
+a:active {
+    color: red
+}
