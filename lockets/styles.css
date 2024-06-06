@@ -1,1 +1,1 @@
-a,a:visited{color:goldenrod}body{border:1px solid goldenrod}img{max-width:100%}#imageGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px}@media (max-width:816px){#imageGrid{grid-template-columns:repeat(2,1fr)}}
+a,a:visited{color:goldenrod}body{border:1px solid goldenrod}
