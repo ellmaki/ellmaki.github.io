@@ -12,16 +12,22 @@
 
 <body>
     <a href='..'>home</a><small> / </small><a href='../music.html'>music</a>
+    <div class="spacer-md"></div>
     <div class='container'>
         <div class='audio-section'>
             <h1>Endless Inbetween</h1>
+            <div class="spacer-md"></div>
             <p>What of the wretched hollow? The endless in-between? Are we just going to wait it out?</p>
+            <div class="spacer-md"></div>
             <audio class='audio-player' id='audioPlayer' controls></audio>
+            <div class="spacer-md"></div>
             <ol id='trackList'>
                 <li class='track' data-track='0'>Endless Inbetween</li>
             </ol>
+            <div class="spacer-lg"></div>
             <div style="text-align: right;"><a download href='endless-inbetween/endless-inbetween.torrent'>download</a>
             </div>
+
             <script>
                 setupAudioPlayer('audioPlayer', 'trackList', ['endless-inbetween/1.mp3', 'endless-inbetween/2.mp3'], 'Endless Inbetween', 'endless-inbetween/art.webp');
             </script>

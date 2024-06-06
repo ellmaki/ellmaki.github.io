@@ -12,18 +12,23 @@
 
 <body>
     <a href='..'>home</a><small> / </small><a href='../music.html'>music</a>
+    <div class="spacer-md"></div>
     <div class='container'>
         <div class='audio-section'>
             <h1>Jumpers</h1>
-            <p>i want to mirror your image to its fullest perfection<br />♦<br />never be blind or too old to uphold
+            <div class="spacer-md"></div>
+            <p>i want to mirror your image to its fullest perfection♦never be blind or too old to uphold
                 your
                 weighty
                 wavering reflection</p>
+            <div class="spacer-md"></div>
             <audio class='audio-player' id='audioPlayer' controls></audio>
+            <div class="spacer-md"></div>
             <ol id='trackList'>
                 <li class='track' data-track='0'>Jumpers</li>
                 <li class='track' data-track='1'>Reflection</li>
             </ol>
+            <div class="spacer-lg"></div>
             <div style="text-align: right;"><a download href='jumpers/jumpers.torrent'>download</a></div>
             <script>
                 setupAudioPlayer('audioPlayer', 'trackList', ['jumpers/1.mp3', 'jumpers/2.mp3'], 'Jumpers', 'jumpers/art.webp');
