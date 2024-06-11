@@ -1,1 +1,0 @@
-const imageGrid = document.getElementById("imageGrid"); let i = 24; function loadImage() { let e = document.createElement("img"); let a = document.createElement("a"); e.src = `lockets/${i}.webp`, e.loading = `lazy`, e.onerror = () => e.remove(), e.onload = () => { --i > 0 && loadImage() }, a.href = e.src, a.appendChild(e), imageGrid.appendChild(a) } loadImage();
