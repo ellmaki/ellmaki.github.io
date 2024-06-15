@@ -1,6 +1,23 @@
+@font-face {
+    font-family: Mono;
+    src: url('mono.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Mono;
+    src: url('mono-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Mono;
+    src: url('mono-light.ttf') format('truetype');
+    font-weight: 300;
+}
+
 * {
-    font-family: WaxWing, sans-serif;
-    font-weight: 400;
+    font-family: Mono, sans-serif;
     margin: 0
 }
 
@@ -31,11 +48,12 @@ body {
 }
 
 small {
-    color: gray
+    color: gray;
+    font-weight: 300;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
@@ -46,17 +64,12 @@ a:active {
     color: red
 }
 
-@font-face {
-    font-family: WaxWing;
-    src: url('waxwing.ttf') format('truetype')
-}
-
 h1 {
-    font-size: 1.5em
+    font-size: 1.66em
 }
 
 h2 {
-    font-size: 1.17em
+    font-size: 1.22em
 }
 
 html {

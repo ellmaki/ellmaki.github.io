@@ -1,1 +1,34 @@
-a,a:visited{color:forestgreen}body{border:1px solid forestgreen}.album-art,.audio-player{width:100%}.track{color:gray}.track:hover{color:black;cursor:pointer}.currently-playing{color:black;text-decoration:underline}
+a,
+a:visited {
+    color: forestgreen
+}
+
+body {
+    border: 1px solid forestgreen
+}
+
+.music-description {
+    font-weight: 300;
+}
+
+.album-art,
+.audio-player {
+    width: 100%
+}
+
+.track {
+    color: gray;
+    font-weight: 300;
+}
+
+.track:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.currently-playing {
+    color: black;
+    text-decoration: underline;
+    font-weight: normal;
+}
