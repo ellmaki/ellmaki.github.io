@@ -55,6 +55,7 @@ small {
 
 a {
     text-decoration: none;
+    font-weight: normal;
 }
 
 a:hover {
