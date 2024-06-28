@@ -1,7 +1,3 @@
-html {
-    background: rgb(248, 248, 248);
-}
-
 @font-face {
     font-family: Mono;
     src: url('mono.ttf') format('truetype');
